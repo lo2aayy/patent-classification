@@ -9,6 +9,7 @@ Install the following requirements:
   - keras
   
 Download Wipo-alpha dataset and put extracted folder in resources
+Download fasttext word embedding and put in resources
 
 Create the dataset by executing:
 
@@ -19,5 +20,5 @@ python create_dataset -test
 
 Train model by executing:
 ```
-python train.py
+python train.py -embedding <embedding_name>
 ```
