@@ -5,8 +5,12 @@ from keras.layers import Reshape, Flatten, Dropout, Concatenate
 from keras.models import Model
 from keras.optimizers import Adam
 from preprocess_data import preprocess
+import argparse
 
-fasttext_name = ''
+parser = argparse.ArgumentParser()
+parser.add_argument('-embedding', action='store', dest='embedding')
+fasttext_name = parser.parse_args().embedding
+
 embedding_dim = 300
 learning_rate = 0.001145
 bs = 128
