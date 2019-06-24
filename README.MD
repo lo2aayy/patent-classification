@@ -9,6 +9,7 @@ Install the following requirements:
   - keras
   
 Download Wipo-alpha dataset and put extracted folder in resources
+
 Download fasttext word embedding and put in resources
 
 Create the dataset by executing:
